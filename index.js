@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // Function for cs play button
-const bestFriendPlayButton = document.querySelector('.play-button-best-friends');
+const bestFriendPlayButton = document.querySelector('.play-button-cs');
 const bestFriendAudio = new Audio('audio/My Best Friend.mp3');
 let isPlayingBestFriends = false;
 
@@ -103,7 +103,7 @@ if (bestFriendPlayButton) {
 }
 
 // Function for mason play button
-const beautifulThingsPlayButton = document.querySelector('.play-button-beautiful-things');
+const beautifulThingsPlayButton = document.querySelector('.play-button-mason');
 const beautifulThingsAudio = new Audio('audio/Beautiful Things.m4a');
 let isPlayingBeautifulThings = false;
 if (beautifulThingsPlayButton) {
