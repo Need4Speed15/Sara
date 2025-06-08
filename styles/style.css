@@ -106,7 +106,11 @@ footer {
   justify-content: center;
 }
 
-.cs-videos {
+.cs-videos,
+.home-videos,
+.sara-videos,
+.mason-videos,
+.tyns-videos {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -115,7 +119,11 @@ footer {
   align-items: flex-start;
 }
 
-.cs-video {
+.cs-video,
+.home-video,
+.sara-video,
+.mason-video,
+.tyns-video {
   width: 300px;
   max-width: 100%;
   border-radius: 30px;
