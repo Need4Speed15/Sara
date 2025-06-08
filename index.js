@@ -32,15 +32,15 @@ document.addEventListener('DOMContentLoaded', function() {
   if (masonPhotos) masonPhotos.innerHTML = masonPhotosList;
 
   const csPhotos = document.querySelector('.cs-photos');
-  const csVideos = document.querySelector('.video-grid');
+  const csVideos = document.querySelector('.cs-videos');
   let csPhotosList = '';
   let csVideosList = '';
   for (let i = 1; i <= 70; i++) {
-    const photo = `<img class="cs-photos" src="images/cs/cs${i}.jpg" alt="C+S ${i}">`;
+    const photo = `<img class="cs-photo" src="images/cs/cs${i}.jpg" alt="C+S ${i}">`;
     csPhotosList += photo;
   }
   for (let i = 2; i <= 15; i++) {
-    const video = `<video class="video-grid-vid" src="images/cs/videos/cs${i}.mov" alt="C+S Video ${i}" controls autoplay loop muted></video>`;
+    const video = `<video class="cs-video" src="images/cs/videos/cs${i}.mov" alt="C+S Video ${i}" controls autoplay loop muted></video>`;
     csVideosList += video;
   }
   if (csPhotos) csPhotos.innerHTML = csPhotosList;
