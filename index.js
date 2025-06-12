@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const tynsleeVideos = document.querySelector('.tyns-videos');
   let tynsleeVideosList = '';
   let tynsleePhotosList = '';
-  for (let i = 1; i <= 8; i++) {
+  for (let i = 1; i <= 9; i++) {
     const photo = `<img src="images/tynslee/tyns${i}.jpg" alt="Tyns ${i}">`;
     tynsleePhotosList += photo;
   }
@@ -78,27 +78,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // Function for cs play button
-const bestFriendPlayButton = document.querySelector('.play-button-cs');
-const bestFriendAudio = new Audio('audio/My Best Friend.mp3');
-let isPlayingBestFriends = false;
+const carolinaPlayButton = document.querySelector('.play-button-cs');
+const carolinaAudio = new Audio('audio/Carolina.mp3');
+let isPlayingCarolina = false;
 
-if (bestFriendPlayButton) {
-  bestFriendPlayButton.addEventListener('click', function () {
-    if (!isPlayingBestFriends) {
-      bestFriendAudio.volume = 0.5;
-      bestFriendAudio.play();
-      bestFriendPlayButton.textContent = 'Pause';
-      isPlayingBestFriends = true;
+if (carolinaPlayButton) {
+  carolinaPlayButton.addEventListener('click', function () {
+    if (!isPlayingCarolina) {
+      carolinaAudio.volume = 0.5;
+      carolinaAudio.play();
+      carolinaPlayButton.textContent = 'Pause';
+      isPlayingCarolina = true;
     } else {
-      bestFriendAudio.pause();
-      bestFriendPlayButton.textContent = 'Play';
-      isPlayingBestFriends = false;
+      carolinaAudio.pause();
+      carolinaPlayButton.textContent = 'Play';
+      isPlayingCarolina = false;
     }
   });
 
-  bestFriendAudio.addEventListener('ended', function () {
-    bestFriendPlayButton.textContent = 'Play';
-    isPlayingBestFriends = false;
+  carolinaAudio.addEventListener('ended', function () {
+    carolinaPlayButton.textContent = 'Play';
+    isPlayingCarolina = false;
   });
 }
 
@@ -125,3 +125,53 @@ if (beautifulThingsPlayButton) {
     isPlayingBeautifulThings = false;
   });
 } 
+
+// Function for sara play button
+const saraPlayButton = document.querySelector('.play-button-sara');
+const saraAudio = new Audio('audio/Take Me Home.mp3');
+let isPlayingSara = false;
+
+if (saraPlayButton) {
+  saraPlayButton.addEventListener('click', function () {
+    if (!isPlayingSara) {
+      saraAudio.volume = 0.5;
+      saraAudio.play();
+      saraPlayButton.textContent = 'Pause';
+      isPlayingSara = true;
+    } else {
+      saraAudio.pause();
+      saraPlayButton.textContent = 'Play';
+      isPlayingSara = false;
+    }
+  });
+
+  saraAudio.addEventListener('ended', function () {
+    saraPlayButton.textContent = 'Play';
+    isPlayingSara = false;
+  });
+}
+
+// Function for tynslee play button
+const tynsleePlayButton = document.querySelector('.play-button-tynslee');
+const tynsleeAudio = new Audio('audio/You\'re Gonna Be.mp3');
+let isPlayingTynslee = false;
+
+if (tynsleePlayButton) {
+  tynsleePlayButton.addEventListener('click', function () {
+    if (!isPlayingTynslee) {
+      tynsleeAudio.volume = 0.5;
+      tynsleeAudio.play();
+      tynsleePlayButton.textContent = 'Pause';
+      isPlayingTynslee = true;
+    } else {
+      tynsleeAudio.pause();
+      tynsleePlayButton.textContent = 'Play';
+      isPlayingTynslee = false;
+    }
+  });
+
+  tynsleeAudio.addEventListener('ended', function () {
+    tynsleePlayButton.textContent = 'Play';
+    isPlayingTynslee = false;
+  });
+}
