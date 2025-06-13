@@ -173,3 +173,13 @@ footer {
 .playlist-play-button {
   margin: 10px 5px 0px 5px;
 }
+
+.birthday-message {
+  background: linear-gradient(to right, #0bb3ab, #5daabb, #0bb3ab);
+  border: 2px solid #09D1C7;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  margin: 20px auto;
+  max-width: 600px;
+}
